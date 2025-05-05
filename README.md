@@ -9,7 +9,7 @@ O processo cliente envia para o servidor 3 requisições com uma operação mate
 ## Aplicação Cliente sem threads (noThreadsClient.py)
 O processo cliente envia para o servidor 3 requisições com uma operação matemática em cada requisição. Para simular um tempo de espera, cada requisição que vai ser enviada possui um tempo de espera aleatório de 0 a 10 segundos, durante esse tempo o processo fica inativo, ao finalizar o tempo de espera a requisição é enviada para o servidor.
 
-##Comparação do tempo de execução
+## Comparação do tempo de execução
 
 **a) Threads no servidor**
 Com threads apenas no servidor as requisições só são enviadas após a anterior ter finalizado, portanto o tempo de espera é maior, já que cada requisição tem que esperar a anterior, como há um tempo aleatório de 10s de espera, no pior caso todas as requisições serão finalizadas em 30 segundos.
